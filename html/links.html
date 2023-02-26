@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <div class="container" id="intro">
+        <h1>Links - Hyperlinks</h1>
+
+        <ul>
+            <li>Click on a link and jump to another document.</li>
+            <li>Example : <a href="https://www.simform.com/">Visit Website</a>
+                <pre>&lt;a href="url" &gt; Click On me &lt;/a&gt; </pre>
+            </li>
+        </ul>
+
+        <h3 id="target">Target Attribute</h3>
+        <ul>
+            <li>The target attribute specifies where to open the linked document.
+                <ul>
+                    <li>
+                        <b>_self</b> - Default. Opens the document in the same window/tab as it was clicked
+                        <br> <span id="example"> Example : <b><a href="https://www.simform.com/" target="_self">Click
+                                    Me</a></b></span>
+                    </li>
+                    <li>
+                        <b>_blank</b> - Opens the document in a new window or tab
+                        <br> <span id="example"> Example :
+                            <b><a href="https://www.simform.com/" target="_blank">Click Me</a></b></span>
+                    </li>
+                    <li>
+                        <b>_parent</b> - Opens the document in the parent frame
+                        <br> <span id="example"> Example : <b><a href="https://www.simform.com/" target="_parent">Click
+                                    Me</a></b></span>
+                    </li>
+                    <li>
+                        <b>_top</b> - Opens the document in the full body of the window
+                        <br> <span id="example"> Example : <b><a href="https://www.simform.com/" target="_top">Click
+                                    Me</a></b></span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+
+        <h3>Absoulte URL vs Relative URL</h3>
+        <p>Example of Absoulte URL :
+            <code>&lt;a href="http://www.google.com/my-link.html"&gt;Click Me&lt;a&gt;</code>
+        </p>
+        <br>
+        <p>Example of Relative URL :
+            <code>&lt;a href="./images/index.html"&gt;Click Me&lt;a&gt;</code>
+        </p>
+        <br>
+
+        <h3>Bookmark</h3>
+        <p>Example of Bookmark : <a href="./intro.html#attributes">HTML Attributes</a>
+            <code>&lt;a href="#id_name"&gt;Click Me&lt;a&gt;</code>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -15,8 +15,23 @@
 <body>
     <div class="container" id="intro">
         <h1>How webpage renders</h1>
-
-        <img src="../img/render_tree.avif" alt="Render Tree" width="800">
+        <ul>
+            <li>First it will build DOM Tree using HTML elements</li>
+            <li>Fetch External Resources : CSS & JS
+                <ul>
+                    <li>CSS : <b> Block rendering </b>: It will overwrite properties at various points, So it will stop
+                        rendering till the CSSOM not created.</li>
+                    <li>JS : <b> Block Parsing(Division of elements) </b>: It will stop the DOM creation, So it will use async
+                        or defer attribute, So it is preferable to put JS end of body tag.</li>
+                </ul>
+            </li>
+            <li>Parse CSS & Create CSSOM</li>
+            <li>Execute JS</li>
+            <li>Merge DOM & CSSOM : Create Render Tree</li>
+            <li>Display Render Tree on Web browser</li>
+        </ul>
+        <br>
+        <img src="../img/render_tree.avif" alt="Render Tree" width="800" border="1">
     </div>
 </body>
 
